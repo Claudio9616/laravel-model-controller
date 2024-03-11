@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\HeaderLinkController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +15,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/contacts', [HeaderLinkController::class, 'contact'])->name('contacts');
+Route::get('/abouts', [HeaderLinkController::class, 'about'])->name('abouts');

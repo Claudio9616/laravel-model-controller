@@ -9,10 +9,10 @@
 <body>
     <div class="row">
         <div class="col">
-            <a href="">CONTATTI</a>
+            <a href="{{route('contacts')}}">CONTATTI</a>
         </div>
         <div class="col">
-            <a href="">CHI SIAMO</a>
+            <a href="{{route('abouts')}}">CHI SIAMO</a>
         </div>
     </div>
 </body>
